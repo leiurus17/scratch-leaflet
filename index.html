@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My First Leaflet Page</title>
+		<link rel="stylesheet" href="./leaflet/leaflet.css" />
+
+		<!-- Make sure you put this AFTER Leaflet's CSS -->
+		<script src="./leaflet/leaflet.js" ></script>
+	</head>
+	
+	<body>
+		<div id="mapid" style="width: 1000px; height: 1000px;"></div>
+		<script type="text/javascript">
+			var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+		</script>
+	<body>
+</html>
