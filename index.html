@@ -3,13 +3,27 @@
 	<head>
 		<title>My First Leaflet Page</title>
 		<link rel="stylesheet" href="./leaflet/leaflet.css" />
+		<style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        html, body, #mapid {
+            height: 100%;
+            width: 100%;
+        }
+        </style>
 
 		<!-- Make sure you put this AFTER Leaflet's CSS -->
 		<script src="./leaflet/leaflet.js" ></script>
+		
+		
 	</head>
 	
 	<body>
-		<div id="mapid" style="width: 1000px; height: 1000px;"></div>
+		<div id="mapid"></div>
+		
+		
 		<script type="text/javascript">
 			var mymap = L.map('mapid').setView([14.5995, 120.9842], 15); // City of Manila, Philippines
 			
